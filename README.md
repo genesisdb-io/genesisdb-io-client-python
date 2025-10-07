@@ -17,7 +17,7 @@ This is the official Python SDK for Genesis DB, an awesome and production ready 
 ## Installation
 
 ```bash
-pip install genesisdb
+pip install https://github.com/genesisdb-io/genesisdb-io-client-python.git
 ```
 
 ## Configuration
