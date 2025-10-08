@@ -400,6 +400,11 @@ class Client:
                                 # Handle SSE-like format
                                 json_str = line[6:] if line.startswith('data: ') else line
                                 json_data = json.loads(json_str)
+
+                                # Check if this is an empty payload object with only one key
+                                if json_data.get('payload') == '' and len(json_data) == 1:
+                                    continue
+
                                 event = CloudEvent(json_data)
                                 yield event
                             except json.JSONDecodeError as err:
