@@ -6,17 +6,17 @@ from cloudevents.http import CloudEvent
 
 
 class Client:
-    """Genesis DB Python Client
+    """GenesisDB Python Client
 
-    This client provides methods to interact with Genesis DB API.
+    This client provides methods to interact with GenesisDB API.
     """
 
     def __init__(self, config: Optional[Dict[str, str]] = None):
-        """Initialize the Genesis DB client
+        """Initialize the GenesisDB client
 
         Args:
             config: Optional configuration dictionary with keys:
-                - api_url: The base URL of the Genesis DB API
+                - api_url: The base URL of the GenesisDB API
                 - api_version: The API version (e.g., 'v1')
                 - auth_token: The authentication token
 
@@ -55,7 +55,7 @@ class Client:
         subject: str,
         options: Optional[Dict[str, Any]] = None
     ) -> List[CloudEvent]:
-        """Stream events from Genesis DB
+        """Stream events from GenesisDB
 
         Args:
             subject: The subject to stream events for
@@ -126,7 +126,7 @@ class Client:
         events: List[Dict[str, Any]],
         preconditions: Optional[List[Dict[str, Any]]] = None
     ):
-        """Commit events to Genesis DB
+        """Commit events to GenesisDB
 
         Args:
             events: List of event dictionaries with keys:

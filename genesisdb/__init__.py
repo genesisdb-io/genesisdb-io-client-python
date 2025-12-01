@@ -1,6 +1,6 @@
-"""Genesis DB Python SDK
+"""GenesisDB Python SDK
 
-This is the official Python SDK for Genesis DB, an awesome and production ready
+This is the official Python SDK for GenesisDB, an awesome and production ready
 event store database system for building event-driven apps.
 """
 
